@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+body {
+  background-color: rgba(229, 202, 255, 0.386);
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;     /* Center items vertically  /* Optional: keeps text color consistent */
+}
+
+a {
+outline: none;      /* Removes blue outline on focus */
+box-shadow: none;   /* Removes any focus box-shadow */
+text-decoration: none;    /* Removes underline */
+
+}
+
+  
