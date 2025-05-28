@@ -1,25 +1,125 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
 body {
   background-color: rgba(229, 202, 255, 0.386);
 }
 
+
+
 nav ul {
   display: flex;
-  gap: 1rem;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-content: center; /* Center items horizontally */
-  align-items: center;     /* Center items vertically  /* Optional: keeps text color consistent */
+  justify-content: center;
+  align-items: center;
 }
 
 a {
 outline: none;      /* Removes blue outline on focus */
 box-shadow: none;   /* Removes any focus box-shadow */
 text-decoration: none;    /* Removes underline */
+color: inherit;  /* Keeps text color consistent */
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+font-weight: 400;
 
 }
 
   
+.Title{
+  text-align: center;
+  margin: 1rem auto;
+  max-width: 600px;
+  /*here below we set the font family to Neonderthaw and the style to it as well */
+  font-family: "Neonderthaw", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.0rem;
+  padding-top: 18rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.icon1, .icon2 {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  padding-bottom: 10rem;
+}
+
+.icon1:hover, .icon2:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+#About-Me {
+  padding-top: 20rem;
+} 
+
+.graph{
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400;
+}
+
+.skills, .me {
+  text-decoration: underline;
+  text-decoration-color: purple;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.skills:hover {
+  text-decoration-color: rgba(128, 128, 128, 0.424);
+  text-decoration: none;
+  opacity: 0.4;
+
+}
+
+.me:hover {
+  text-decoration-color: rgba(128, 128, 128, 0.424);
+  text-decoration: none;
+  opacity: 0.4;
+}
+
+
+.who{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 800;
+  text-align: center;
+  margin: 3rem auto;
+  text-decoration: wavy;
+}
+
+/* the the styling for the back to home a tag */
+
+.in {
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: underline;
+  text-decoration-color: purple;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.in:hover{
+  text-decoration-color: rgba(128, 128, 128, 0.424);
+  text-decoration: none;
+  opacity: 0.4;
+
+}
